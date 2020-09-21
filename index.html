@@ -18,20 +18,20 @@
 
             <main>
                 <p>
-                    Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit. Proin consequat justo et congue consequat. Sed porta aliquet dui eu luctus. Etiam volutpat nec turpis eget maximus. Praesent non metus nec dolor maximus vestibulum eu non ex. Vestibulum et finibus ligula. Praesent malesuada, orci ut rhoncus faucibus, massa tellus lobortis enim, dictum porta purus nisl sed ante. Cras sed eleifend purus. Vivamus tincidunt lacinia sodales. Sed dictum non elit facilisis egestas. Donec consequat rhoncus dolor. Cras non tincidunt ligula. In ullamcorper imperdiet erat, quis imperdiet tellus lobortis ac. Cras non viverra urna. Suspendisse aliquam, metus at tempus varius, nisl ligula dictum nisl, blandit fermentum metus sem ac tellus. Aliquam erat volutpat.
+                    O html é incrivel para marcar a pagina.
                 </p>
     
                 <p>
-                    Donec lobortis id augue sit amet commodo. Duis vel egestas erat. Pellentesque volutpat diam ut lobortis hendrerit. Fusce congue nulla laoreet nibh gravida, sit amet tristique eros porta. Donec bibendum dui sed sodales pulvinar. Etiam bibendum eleifend dui vitae consectetur. Integer pellentesque libero a dapibus vulputate. Morbi cursus luctus nunc, ac viverra est varius nec.
+                    O css acrescenta estilo a sua pagina.
                 </p>
     
                 <p>
-                    Integer ante odio, consequat nec nisi ut, pulvinar eleifend nulla. Vivamus pretium quis leo vitae egestas. Duis mauris massa, venenatis commodo justo non, elementum rhoncus libero. Ut tempus justo in rhoncus vulputate. Integer at diam quis sapien ornare aliquet. Vestibulum blandit laoreet nibh, vitae feugiat mauris efficitur sed. Nullam vel ligula id massa interdum pulvinar quis eu augue. Sed non convallis nisi. Vivamus malesuada risus a erat lobortis dictum.</p>
+                    O Javascript vai adicionar as funçoes de cada elemento da pagina.    
                 </p>    
             </main>
             
             <section id="botoes">
-                <button>+ Adicionar ideias</button>
+                <button id="add" onclick="onOff()">+ Adicionar ideias</button>
                 <button class="fat">Ver ideias</button>
             </section>
 
@@ -86,12 +86,38 @@
 
     <!-- Modal-->
 
-    <div id="modal">
+    <div id="modal" class="hide">
         <div class="content">
             <h1>Nova Ideia</h1>
             <form action="">
 
-                
+                <div class="input-wraper">
+                    <label for="title">Titulo da Ideia</label>
+                    <input type="text" name="title">
+                </div>
+
+                <div class="input-wraper">
+                    <label for="category">Categoria</label>
+                    <input type="text" name="category">
+                </div>
+
+                <div class="input-wraper">
+                    <label for="image">Link da imagem</label>
+                    <input type="url" name="image">
+                </div>
+
+                <div class="input-wraper">
+                    <label for="description">Digite uma descriçao para essa ideia</label>
+                    <textarea name="description" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="input-wraper">
+                    <label for="link">Link da ideia</label>
+                    <input type="url" name="title">
+                </div>
+
+                <a href="#" onclick="onOff()">X</a>
+                <button>Enviar</button>
 
             </form>
         </div>
