@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><!-- O html-->
+<head><!--Cabeça, é responsável por receber configuraçoes da pagina-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        button {
+            color: darkblue;
+            border: 0;
+            font-weight: bold;
+            background-color: none;
+        }
+        .fat{
+            color:white;
+            background: darkblue;
+        }
+
+        #footer a {
+            color: royalblue;
+            text-decoration: none;
+        }
+
+        .hide {
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <img src="logo.jpeg" alt="">
+    <p>
+        Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit. Proin consequat justo et congue consequat. Sed porta aliquet dui eu luctus. Etiam volutpat nec turpis eget maximus. Praesent non metus nec dolor maximus vestibulum eu non ex. Vestibulum et finibus ligula. Praesent malesuada, orci ut rhoncus faucibus, massa tellus lobortis enim, dictum porta purus nisl sed ante. Cras sed eleifend purus. Vivamus tincidunt lacinia sodales. Sed dictum non elit facilisis egestas. Donec consequat rhoncus dolor. Cras non tincidunt ligula. In ullamcorper imperdiet erat, quis imperdiet tellus lobortis ac. Cras non viverra urna. Suspendisse aliquam, metus at tempus varius, nisl ligula dictum nisl, blandit fermentum metus sem ac tellus. Aliquam erat volutpat.
+    </p>
+    <p>
+        Donec lobortis id augue sit amet commodo. Duis vel egestas erat. Pellentesque volutpat diam ut lobortis hendrerit. Fusce congue nulla laoreet nibh gravida, sit amet tristique eros porta. Donec bibendum dui sed sodales pulvinar. Etiam bibendum eleifend dui vitae consectetur. Integer pellentesque libero a dapibus vulputate. Morbi cursus luctus nunc, ac viverra est varius nec.
+    </p>
+    <p>
+        Integer ante odio, consequat nec nisi ut, pulvinar eleifend nulla. Vivamus pretium quis leo vitae egestas. Duis mauris massa, venenatis commodo justo non, elementum rhoncus libero. Ut tempus justo in rhoncus vulputate. Integer at diam quis sapien ornare aliquet. Vestibulum blandit laoreet nibh, vitae feugiat mauris efficitur sed. Nullam vel ligula id massa interdum pulvinar quis eu augue. Sed non convallis nisi. Vivamus malesuada risus a erat lobortis dictum.</p>
+    </p>
+    <button>+ Adicionar conteudo</button>
+    <button class="fat">Ver conteudo</button>
+
+    <small id="footer">Com Amor <a href="http://">Thyéz Oliveira</a></small>
+
+    <script>
+        document
+            .querySelector("button.fat")
+            .addEventListener("click", function(){
+                document
+                    .querySelector("#footer")
+                    .classList
+                    .toggle("hide")
+            })
+    </script>
+</body>
+</html>
