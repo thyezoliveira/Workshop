@@ -4,56 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-        button {
-            color: darkblue;
-            border: 0;
-            font-weight: bold;
-            background-color: none;
-        }
-        .fat{
-            color:white;
-            background: darkblue;
-        }
-
-        #footer a {
-            color: royalblue;
-            text-decoration: none;
-        }
-
-        .hide {
-            display: none;
-        }
-
-
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="logo.jpeg" alt="">
-    <p>
-        Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit. Proin consequat justo et congue consequat. Sed porta aliquet dui eu luctus. Etiam volutpat nec turpis eget maximus. Praesent non metus nec dolor maximus vestibulum eu non ex. Vestibulum et finibus ligula. Praesent malesuada, orci ut rhoncus faucibus, massa tellus lobortis enim, dictum porta purus nisl sed ante. Cras sed eleifend purus. Vivamus tincidunt lacinia sodales. Sed dictum non elit facilisis egestas. Donec consequat rhoncus dolor. Cras non tincidunt ligula. In ullamcorper imperdiet erat, quis imperdiet tellus lobortis ac. Cras non viverra urna. Suspendisse aliquam, metus at tempus varius, nisl ligula dictum nisl, blandit fermentum metus sem ac tellus. Aliquam erat volutpat.
-    </p>
-    <p>
-        Donec lobortis id augue sit amet commodo. Duis vel egestas erat. Pellentesque volutpat diam ut lobortis hendrerit. Fusce congue nulla laoreet nibh gravida, sit amet tristique eros porta. Donec bibendum dui sed sodales pulvinar. Etiam bibendum eleifend dui vitae consectetur. Integer pellentesque libero a dapibus vulputate. Morbi cursus luctus nunc, ac viverra est varius nec.
-    </p>
-    <p>
-        Integer ante odio, consequat nec nisi ut, pulvinar eleifend nulla. Vivamus pretium quis leo vitae egestas. Duis mauris massa, venenatis commodo justo non, elementum rhoncus libero. Ut tempus justo in rhoncus vulputate. Integer at diam quis sapien ornare aliquet. Vestibulum blandit laoreet nibh, vitae feugiat mauris efficitur sed. Nullam vel ligula id massa interdum pulvinar quis eu augue. Sed non convallis nisi. Vivamus malesuada risus a erat lobortis dictum.</p>
-    </p>
-    <button>+ Adicionar conteudo</button>
-    <button class="fat">Ver conteudo</button>
 
-    <small id="footer">Com Amor <a href="http://">Thyéz Oliveira</a></small>
+    <div id="container">
 
-    <script>
-        document
-            .querySelector("button.fat")
-            .addEventListener("click", function(){
-                document
-                    .querySelector("#footer")
-                    .classList
-                    .toggle("hide")
-            })
-    </script>
+        <section id="intro">
+            <header>
+                <img id="logo" src="logo.jpeg" alt="">
+            </header>
+
+            <main>
+                <p>
+                    Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit. Proin consequat justo et congue consequat. Sed porta aliquet dui eu luctus. Etiam volutpat nec turpis eget maximus. Praesent non metus nec dolor maximus vestibulum eu non ex. Vestibulum et finibus ligula. Praesent malesuada, orci ut rhoncus faucibus, massa tellus lobortis enim, dictum porta purus nisl sed ante. Cras sed eleifend purus. Vivamus tincidunt lacinia sodales. Sed dictum non elit facilisis egestas. Donec consequat rhoncus dolor. Cras non tincidunt ligula. In ullamcorper imperdiet erat, quis imperdiet tellus lobortis ac. Cras non viverra urna. Suspendisse aliquam, metus at tempus varius, nisl ligula dictum nisl, blandit fermentum metus sem ac tellus. Aliquam erat volutpat.
+                </p>
+    
+                <p>
+                    Donec lobortis id augue sit amet commodo. Duis vel egestas erat. Pellentesque volutpat diam ut lobortis hendrerit. Fusce congue nulla laoreet nibh gravida, sit amet tristique eros porta. Donec bibendum dui sed sodales pulvinar. Etiam bibendum eleifend dui vitae consectetur. Integer pellentesque libero a dapibus vulputate. Morbi cursus luctus nunc, ac viverra est varius nec.
+                </p>
+    
+                <p>
+                    Integer ante odio, consequat nec nisi ut, pulvinar eleifend nulla. Vivamus pretium quis leo vitae egestas. Duis mauris massa, venenatis commodo justo non, elementum rhoncus libero. Ut tempus justo in rhoncus vulputate. Integer at diam quis sapien ornare aliquet. Vestibulum blandit laoreet nibh, vitae feugiat mauris efficitur sed. Nullam vel ligula id massa interdum pulvinar quis eu augue. Sed non convallis nisi. Vivamus malesuada risus a erat lobortis dictum.</p>
+                </p>    
+            </main>
+            
+            <section id="botoes">
+                <button>+ Adicionar ideias</button>
+                <button class="fat">Ver ideias</button>
+            </section>
+
+            <footer>
+                <small id="footer">Com Amor <a href="http://">Thyéz Oliveira</a></small>
+            </footer>
+
+        </section>
+
+        <section id="ultimas_ideias">
+            <div class="ideia">
+                <img 
+                    src="https://www.flaticon.com/svg/static/icons/svg/1006/1006363.svg" 
+                    alt="">
+                <div class="conteudo">
+                    <h3>Codificando</h3>
+                    <p>Estudo</p>
+                    <div id="descricao">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo non ad tenetur inventore, accusamus odio, aspernatur perspiciatis iste unde cum repellat cupiditate eos? Impedit tempora labore, praesentium nisi officia fuga.
+                    </div>
+                    <a href="#">Ir para a ideia.</a>
+                </div>
+            </div>
+            <div class="ideia">
+                <img 
+                    src="https://www.flaticon.com/svg/static/icons/svg/3094/3094455.svg" 
+                    alt="Logo do html.">
+                <div class="conteudo">
+                    <h3>HTML</h3>
+                    <p>Marcaçao</p>
+                    <div id="descricao">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo non ad tenetur inventore, accusamus odio, aspernatur perspiciatis iste unde cum repellat cupiditate eos? Impedit tempora labore, praesentium nisi officia fuga.
+                    </div>
+                    <a href="#">Ir para a ideia.</a>
+                </div>
+            </div>
+            <div class="ideia">
+                <img 
+                    src="https://www.flaticon.com/svg/static/icons/svg/919/919826.svg" 
+                    alt="Logo do CSS">
+                <div class="conteudo">
+                    <h3>CSS</h3>
+                    <p>Estilizaçao</p>
+                    <div id="descricao">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo non ad tenetur inventore, accusamus odio, aspernatur perspiciatis iste unde cum repellat cupiditate eos? Impedit tempora labore, praesentium nisi officia fuga.
+                    </div>
+                    <a href="#">Ir para a ideia.</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal-->
+
+    <div id="modal">
+        <div class="content">
+            <h1>Nova Ideia</h1>
+            <form action="">
+
+                
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="scripts.js"></script>
 </body>
 </html>
