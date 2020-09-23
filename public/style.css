@@ -1,0 +1,363 @@
+/*
+
+BOX
+    largura
+    conteudo d caixa
+
+    Espaçamentos
+    Preenchimento
+    Bordas
+
+    Posicionamentos
+
+*/
+
+
+/*GLOBAL*******************************************/
+
+                                                    /**********/
+                                                    /**/
+                                                    /**/  /****/
+                                                    /**/    /**/
+                                                    /**********/
+
+body {
+    background: #e5e5e5;
+    color: #25282B;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body.hideScroll {
+    overflow: hidden;
+}
+#logo {
+    margin:0;
+    border-radius: 6px;
+    box-shadow: 0 12px 15px -15px black;
+}
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.button{
+    color:white;
+    background: darkblue;
+
+    width: 100px;
+    height: 32px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px darkblue;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+
+}
+
+.button:hover {
+    background-color: cadetblue;
+    text-decoration: underline;
+}
+
+/*Mostrar e esconder o footer*/
+#modal.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*PADRAO*******************************************/
+
+                                                    /**********/
+                                                    /**/    /**/
+                                                    /**/    /**/
+                                                    /**********/
+                                                    /**/
+                                                    /**/
+
+#container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+}
+
+#container #intro #botoes #add {
+    background: none;
+    border-radius: 6px;
+    line-height: 13px;
+}
+#container #intro #botoes #add:hover {
+    background: blue;
+    color: white;
+    text-decoration: none;
+}
+
+#intro {
+    width: 90%;
+    margin-right: 64px;
+}
+
+#botoes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 32px;
+}
+
+main {
+    width: auto;
+    margin: 32px 0;
+}
+
+button {
+    color: darkblue;
+    background: black;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    transition: 500ms;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+
+#botoes, footer {
+    text-align: center;
+}
+
+footer {
+    font-size: 14px;
+    font-weight: regular;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #777;
+}
+footer a {
+    color: royalblue;
+    text-decoration: none;
+}
+
+.ideia {
+    width: 80%;
+    display: flex;
+    margin-bottom: 32px;
+    background-color: #FFF;
+    padding: 32px;
+    border-radius: 6px;
+    box-shadow: 0 12px 15px -15px black;
+}
+
+.ideia img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.ideia h3 {
+    margin: 0;
+}
+
+.ideia p {
+    margin: 8px 0;
+    color: #777;
+}
+
+.ideia .descicao {
+    margin: 16px 0;
+}
+
+.ideia a {
+    color: blue;
+    text-decoration: none;
+    padding: 3px;
+    transition: all 500ms;
+}
+
+.ideia a:hover {
+    color: darkcyan;
+    text-decoration: none;
+    padding: 3px;
+}
+
+p, #descricao {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+/*Modal*/
+
+#modal {
+    background: darkcyan;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    transition: 300ms;
+}
+
+#modal.addScroll {
+    overflow: auto;
+}
+#modal .content {
+    margin-top: 5%;
+    color: white;
+}
+
+#modal .content h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#modal .content form {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#modal .content form div:nth-child(3),
+#modal .content form div:nth-child(4),
+#modal .content form div:nth-child(5)
+ {
+    grid-column: span 2;
+}
+#modal .content form .input-wraper {
+    margin: 5px 0;
+}
+
+#modal .content form label {
+    font-size: medium;
+    font-weight: semi-bold;
+    line-height: 3px;
+    letter-spacing: 0.2px;
+}
+
+#modal .content form a {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 10px;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    align-self: center;
+
+    transition: 500ms;
+}
+#modal .content form a:hover {
+    background-color: red;
+    color: white;
+}
+#modal .content form input, 
+#modal .content form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 10px -5px white;
+}
+
+#modal .content form button {
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    margin: 50px 0;
+    grid-column: 2;
+    justify-self: end;
+}
+
+#modal .content form button:hover {
+    text-decoration: none;
+    color: cornsilk;
+    background-color: blue;
+}
+
+/*Ideias.html************************************************/
+#pg-ideias #container{
+    display: block;
+}
+#pg-ideias header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pg-ideias nav {
+    display: flex;
+    align-items: center;
+}
+
+#pg-ideias nav li {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+#pg-ideias nav li a {
+    font-weight: bold;
+    color: black;
+}
+
+#pg-ideias nav li a.button {
+    font-weight: bold;
+    color: white;
+}
+
+#pg-ideias nav li:last-child {
+    margin: 0;
+   
+}
+
+
+section#title {
+    text-align: center;
+}
+
+section#title p {
+    opacity: 0.7;
+    margin: 0;
+}
+
+section#title h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+section#ultimas_ideias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+section#title,
+section#ultimas_ideias,
+footer {
+    margin-top: 64px;
+}

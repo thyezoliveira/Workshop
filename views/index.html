@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section id="intro">
+
+    <header>
+        <a href="/">
+            <img id="logo" src="logo.jpeg" alt="Imagem da logo">
+        </a>
+    </header>
+
+    <main>
+        <p>
+            O html é incrivel para marcar a pagina.
+        </p>
+
+        <p>
+            O css acrescenta estilo a sua pagina.
+        </p>
+
+        <p>
+            O Javascript vai adicionar as funçoes de cada elemento da pagina.    
+        </p>    
+    </main>
+    
+    <section id="botoes">
+        <button id="add" onclick="onOff()">+ Adicionar ideias</button>
+        <a href="/ideias" class="button">Ver ideias</a>
+    </section>
+
+    <footer>
+        <small id="footer">Feito por <a href="http://" target="_blank">Thyéz Oliveira</a></small>
+    </footer>
+
+</section>
+
+<section id="ultimas_ideias">
+    {% include "todas_ideias.html" %}
+</section>
+
+{% endblock %}

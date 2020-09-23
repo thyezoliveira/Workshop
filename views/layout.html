@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br"><!-- O html-->
+<head><!--Cabeça, é responsável por receber configuraçoes da pagina-->
+    <meta charset="UTF-8">
+    {% block title %}
+        <title>SWS-Sistemas Web Saquarema</title>
+    {% endblock title%}
+
+    {% include "head_links.html" %}
+</head>
+<body id="{{bodyId}}">
+
+    <div id="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!--Modal-->
+    {% include "modal.html" %}
+
+    <script src="scripts.js"></script>
+</body>
+</html>
